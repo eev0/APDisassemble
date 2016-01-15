@@ -1,2 +1,2 @@
 all:
-    gcc APDisassemble.c -o APDisassemble
+	gcc APDisassemble.c -o APDisassemble
