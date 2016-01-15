@@ -40,9 +40,10 @@ int out2Text() {
 
 int main(int argc, char* argv[]) {
     if (argc <= 1) {
-        printf("usage: %s [OPTIONS]\n",argv[0]);
+        printf("usage: %s [OPTIONS] FILE\n",argv[0]);
         printf("Options:\n-p\t\t\tPrint output to terminal\n");
         printf("-t\t\t\tStore output in apticket.dis.txt file\n");
+        return 0;
     }
     int opt = 0;
     if (!fileExists ("apticket.der")) {
@@ -60,7 +61,7 @@ int main(int argc, char* argv[]) {
                     out2Text();
                     break;
                 default:
-                    printf("usage: %s [OPTIONS]\n",argv[0]);
+                    printf("usage: %s [OPTIONS] FILE\n",argv[0]);
                     printf("Options:\n-p\t\t\tPrint output to terminal\n");
                     printf("-t\t\t\tStore output in apticket.dis.txt file\n");
                     break;
